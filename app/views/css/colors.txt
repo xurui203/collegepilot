@@ -1,0 +1,2 @@
+Color scheme: 
+Red: #ff5151
