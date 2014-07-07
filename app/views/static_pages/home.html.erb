@@ -1,2 +1,112 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Co-Pilot: Reach Your Dream School</title>
+
+    <!-- Bootstrap core CSS -->
+  <!--  <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS for the 'One Page Wonder' Template -->
+ <!--   <link href="css/one-page-wonder.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+</head>
+
+<body> -->
+
+<% provide(:title, 'Home') %>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="img responsive" src="img/copilot_logo_sm.png" alt="copilot_logo">
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="mentors_main.html">Mentors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button type="button" class="btn btn-login btn-primary btn-lg"> SIGN UP/LOGIN</button></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="header-image">
+        <img class="img-logo-cloud" src="img/logo.png">
+        <div class="headline">
+            <div class="container">
+                <!--img class = "img-response" src = "img/home_logo.png" alt="home logo"-->
+                <div class="logo-rect">
+                    <h1><span class="expand">CO</span>-PILOT</h1>
+                    <h2>Reach Your Dream Schools</h2>
+                </div>
+                <img class="img-circle-homepage" src="img/student_b.jpg">
+                <img class="img-circle-homepage" src="img/student_a.jpg">
+                <img class="img-circle-homepage" src="img/student_b.jpg">
+                <img class="img-circle-homepage" src="img/student_a.jpg">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="featurette" id="about">
+            <h2 class="featurette-heading">This First Heading</h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="featurette" id="services">
+            <h2 class="featurette-heading">The Second Heading</h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="featurette" id="contact">
+            <h2 class="featurette-heading">The Third Heading</h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+
+        <!-- /END THE FEATURETTES -->
+
+        <hr>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Copyright &copy; Company 2013</p>
+        </footer>
+        <!-- /END OF FOOTER -->
+
+    </div>
+
+    <!-- /container -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/home.js"></script>
