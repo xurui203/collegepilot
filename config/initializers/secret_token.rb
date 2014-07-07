@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-collegepilot::Application.config.secret_key_base = secure_token
+Collegepilot::Application.config.secret_key_base = secure_token
