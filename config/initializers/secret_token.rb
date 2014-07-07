@@ -9,4 +9,19 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Collegepilot::Application.config.secret_key_base = '69c35eca8d2e083984b60845bbd1a89ddcd66b70b373d7c3fc67f10af103f39b4d4f1addce32604f55416e6f91fd266c83d1488d66df1b020c230c9058b582bd'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+SampleApp::Application.config.secret_key_base = secure_token
