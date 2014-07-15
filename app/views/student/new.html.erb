@@ -1,2 +1,61 @@
-<h1>Student#new</h1>
-<p>Find me in app/views/student/new.html.erb</p>
+<% provide(:title, 'Sign up or register') %>
+
+    <div class="header-mentors">
+        <div class="headline2">
+            <div class="container">
+                <p>Find a mentor to co-pilot college admissions</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h5>Student Sign Up/Login</h5>
+                <div class="border-row"></div>
+                    <div class="col-md-5">
+                        <form class="form-signin" role="form">
+                            <p>Create a free account:</p>
+                                <input type="firstname" class="form-control" placeholder="First Name" required autofocus>
+                                <input type="lastname" class="form-control" placeholder="Last Name" required autofocus>
+                                <input type="email" class="form-control" placeholder="Email address" required autofocus>
+                                <input type="password" class="form-control" placeholder="Password" required>
+                                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-5">
+                        <form class="form-signin" role="form">
+                            <p>Have an account? Login.</p>
+                            <input type="email" class="form-control" placeholder="Email address" required autofocus>
+                            <input type="password" class="form-control" placeholder="Password" required>
+                            <label class="checkbox">
+                                <input type="checkbox" value="remember-me"> Remember me </input> 
+                            </label>
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                        </form>
+                    </div>
+        </div> 
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h5>Mentor Login</h5>
+                <div class="border-row"></div>
+
+                    <div class="col-mentor-login">
+                        <form class="form-signin" role="form">
+                            <p>Login:</p>
+                            <input type="email" class="form-control" placeholder="Email address" required autofocus>
+                            <input type="password" class="form-control" placeholder="Password" required>
+                            <label class="checkbox">
+                                <input type="checkbox" value="remember-me"> Remember me </input> 
+                            </label>
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                        </form>
+                    </div>
+        </div> 
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
