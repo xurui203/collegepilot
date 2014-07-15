@@ -1,0 +1,213 @@
+body {
+	margin-top: 100px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+}
+
+.header-image {
+  background: url('/assets/sky.jpg') center-no-repeat;
+	/* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover*/
+	background-position: top;
+	height: 400px;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.header-pages {
+	background-color: #51ccff;
+	/* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover*/
+	background-position: top;
+	height: 200px;
+	display: block;
+	width: 100%;
+	text-align: center;	
+}
+
+.header-mentors {
+	background-color: #51ccff;
+	/* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover*/
+	background-position: top;
+	height: 100px;
+	display: block;
+	width: 100%;
+	text-align: center;	
+}
+
+.logo-rect {
+  margin-left: 200px;
+  margin-top: 0px;
+  width: 750px;
+  height: 200px;
+  -webkit-border-radius: 10px;
+  border-radius: 30px; /* future proofing */
+  -khtml-border-radius: 10px; /* for old Konqueror browsers */;
+}
+
+.logo-rect > h1 {
+	text-align: center;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+.logo-rect > h2 {
+	margin-top: -20px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: normal;
+	color: #fff;
+}
+
+.headline {
+	padding: 100px 0;
+}
+
+.headline2 {
+	padding: 20px 0;
+}
+
+.headline3 {
+	padding: 10px 0;
+}
+
+.headline2 > .container > h1 {
+	margin-top: 5px;
+	margin-bottom: 1px;
+	font-size: 70px;
+}
+
+.headline > .container > h1 {
+	margin-top: 5px;
+	margin-bottom: 1px;
+	font-size: 70px;
+}
+
+.headline > .container > h2 {
+	font-size: 50px;
+	color: #fff;
+	font-style: normal; 
+}
+
+.headline > .container > p {
+	font-size: 50px;
+	color: #fff;
+}
+
+.headline2 > .container > p {
+	font-size: 50px;
+	color: #fff;
+}
+
+.headline3 > .container > p {
+	font-size: 50px;
+	color: #ff5151;
+}
+
+.headline3 > .container > .p2 {
+	font-size: 50px;
+	text-align: left;
+	color: #ff5151;
+	margin-bottom: 1px;
+}
+
+h1 {
+	font-weight: normal;
+	text-align: right;
+}
+
+h2 {
+	padding-top: 10px;
+	font-weight: normal;
+	text-align: left;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: normal;
+	text-align: left;
+}
+
+h4 {
+	font-weight: normal;
+	text-align: left;
+}
+
+.featurette-divider {
+	margin: 20px 0;
+}
+.featurette {
+	overflow: hidden; 
+}
+
+.featurette-image.pull-left {
+	margin-right: 40px;
+}
+.featurette-image.pull-right {
+	margin-left: 40px;
+}
+
+.featurette-heading {
+	font-size: 40px;
+}
+
+footer {
+	margin: 50px 0;
+}
+
+/* RESPONSIVE CSS */
+
+@media (max-width: 1200px) {
+
+.headline > .container > h1 {font-size: 140px;}
+.headline > .container > h2 {font-size: 63px;}
+.featurette-divider {margin: 50px 0;}
+.featurette-image.pull-left {margin-right: 20px;}
+.featurette-image.pull-right {margin-left: 20px;}
+.featurette-heading {font-size: 35px;}
+
+}
+
+@media (max-width: 991px) {
+
+.headline > .container > h1 {font-size: 105px;}
+.headline > .container > h2 {font-size: 50px;}
+.featurette-divider {margin: 40px 0;}
+.featurette-image {max-width: 50%;}
+.featurette-image.pull-left {margin-right: 10px;}
+.featurette-image.pull-right {margin-left: 10px;}
+.featurette-heading {font-size: 30px;}
+
+}
+
+@media (max-width: 768px) {
+	
+.container {margin: 0 15px;}
+.featurette-divider {margin: 40px 0;}
+.featurette-heading {font-size: 25px;}
+
+}
+
+
+@media (max-width: 668px) {
+
+.headline > .container > h1 {font-size: 70px;}
+.headline > .container > h2 {font-size: 32px;}
+.featurette-divider {margin: 30px 0;}
+
+}
+
+@media (max-width: 640px) {
+
+.headline {padding: 75px 0 25px 0;}
+.headline > .container > h1 {font-size: 60px;}
+.headline > .container > h2 {font-size: 30px;}
+
+}
+
+@media (max-width: 375px) {
+
+.featurette-divider {margin: 10px 0;}
+.featurette-image {max-width: 100%;}
+.featurette-image.pull-left {margin-right: 0; margin-bottom: 10px;}
+.featurette-image.pull-right {margin-left: 0; margin-bottom: 10px;}
+
+}

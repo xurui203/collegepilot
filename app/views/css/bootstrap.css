@@ -6058,3 +6058,15 @@ td.visible-print {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.header-image {
+  background-image: url(app/assets/images/sky.jpg) no-repeat center;
+  /* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover*/
+  background-position: top;
+  height: 400px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
