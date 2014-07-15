@@ -792,7 +792,7 @@ pre code {
   margin-left: -15px;
 }
 .skyrow {
-  background: url('/assets/sky.jpg');
+  background: url('sky.jpg');
 }
 
 .col-current-mentors-list {
@@ -6275,4 +6275,36 @@ footer {
 .featurette-image.pull-left {margin-right: 0; margin-bottom: 10px;}
 .featurette-image.pull-right {margin-left: 0; margin-bottom: 10px;}
 
+}
+
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
 }
