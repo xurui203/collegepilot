@@ -6068,7 +6068,7 @@ body {
 }
 
 .header-image {
-  	background-image: url(image_path('/assets/sky.jpg'));
+  	background-image: url('sky.jpg');
 	/* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover*/
 	background-position: top;
 	height: 400px;
