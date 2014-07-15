@@ -7,4 +7,8 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def mentors
+  end
+
 end

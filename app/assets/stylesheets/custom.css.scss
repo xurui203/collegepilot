@@ -792,7 +792,7 @@ pre code {
   margin-left: -15px;
 }
 .skyrow {
-  background: asset-url('sky.jpg');
+  background: url('sky.jpg');
 }
 
 .col-current-mentors-list {
@@ -6068,7 +6068,7 @@ body {
 }
 
 .header-image {
-  	background-image: asset-url('sky.jpg');
+  	background-image: url('sky.jpg');
 	/* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover*/
 	background-position: top;
 	height: 400px;
