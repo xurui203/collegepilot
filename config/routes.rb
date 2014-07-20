@@ -1,8 +1,9 @@
 Collegepilot::Application.routes.draw do
-  get "student/new"
+  get "users/new"
+  get "user/new"
 
   root 'static_pages#home'
-  match'/signup', to: 'student#new', via: 'get'
+  match'/signup', to: 'user#new', via: 'get'
   match '/mentors',    to: 'static_pages#mentors',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
