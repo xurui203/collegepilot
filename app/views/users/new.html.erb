@@ -1,2 +1,38 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<% provide(:title, 'Sign up') %>
+
+	<h5>Student Sign Up/Login</h5>
+	                <div class="border-row"></div>
+	                    <div class="col-md-5">
+	                            <p>Create a free account:</p>
+	                            <div class="form-signin">
+						
+								    <%= form_for(@user) do |f| %>
+									  <%= render 'shared/error_messages' %>
+
+								      <%= f.label :name %>
+								      <%= f.text_field :name %>
+
+								      <%= f.label :email %>
+								      <%= f.text_field :email %>
+
+								      <%= f.label :password %>
+								      <%= f.password_field :password %>
+
+								      <%= f.label :password_confirmation, "Confirmation" %>
+								      <%= f.password_field :password_confirmation %>
+	   							   	  <%= f.submit "Create my account", class: "btn btn-lg btn-primary btn-block" %>
+
+	  								  <% end %>
+	  								</div>
+						</div>
+	                    <div class="col-md-5">
+	                        <form class="form-signin" role="form">
+	                            <p>Have an account? Login.</p>
+	                            <input type="email" class="form-control" placeholder="Email address" required autofocus>
+	                            <input type="password" class="form-control" placeholder="Password" required>
+	                            <label class="checkbox">
+	                                <input type="checkbox" value="remember-me"> Remember me </input> 
+	                            </label>
+	                            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+	                        </form>
+
